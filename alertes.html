@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+		<title>NAYA — Alertes</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Material+Symbols+Outlined" rel="stylesheet">
+		<link rel="stylesheet" href="naya.css">
+	</head>
+	<body>
+		<div class="naya-stage">
+			<div class="naya-phone">
+				<div class="naya-screen">
+					<div class="naya-status">
+						<span>9:41</span>
+						<span>● Wi-Fi ▰</span>
+					</div>
+					<div class="naya-island"></div>
+
+					<header class="naya-topbar">
+						<div class="naya-brand">
+							<img src="logo1.png" alt="Logo NAYA">
+							<small>Centre des alertes</small>
+						</div>
+						<div class="naya-top-actions">
+							<span class="naya-avatar">   <img
+                class="naya-avatar"
+                src="./img.jpg"
+                alt="Photo de profil"
+                style="width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid #e9d59a;display:block;box-shadow:0 4px 12px rgba(4,23,15,.12);"
+              ></span>
+						</div>
+					</header>
+
+					<main class="naya-content">
+						<div style="margin-bottom: 18px">
+							<p style="font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: #24764b; margin: 0 0 6px">
+								Restez informée
+							</p>
+							<h1 style="font: 700 27px 'EB Garamond', serif; color: #04170f; margin: 0">Mes alertes</h1>
+							<p style="font-size: 12px; color: #64736a; margin: 5px 0">Les rappels et points importants de votre activité.</p>
+						</div>
+
+						<section style="background: white; border: 1px solid #ece9df; border-radius: 17px; padding: 16px; margin-bottom: 13px">
+							<div style="display: flex; align-items: center; gap: 10px">
+								<span class="material-symbols-outlined" style="color: #a7802c; background: #f7efd9; padding: 9px; border-radius: 11px">notifications_active</span>
+								<div>
+									<strong style="font-size: 12px; color: #04170f">Aucune nouvelle alerte</strong>
+									<p style="font-size: 10px; color: #748078; margin: 4px 0 0">Vous êtes à jour pour le moment.</p>
+								</div>
+							</div>
+						</section>
+
+						<section style="background: white; border: 1px solid #ece9df; border-radius: 17px; padding: 16px; margin-bottom: 13px">
+							<strong style="font-size: 13px; color: #04170f">Rappels à surveiller</strong>
+							<div style="display: flex; gap: 11px; padding: 15px 0; border-bottom: 1px solid #f0eee8">
+								<span class="material-symbols-outlined" style="color: #a7802c">account_balance_wallet</span>
+								<div>
+									<strong style="font-size: 11px; color: #17271e">Seuil de trésorerie</strong>
+									<p style="font-size: 10px; color: #748078; margin: 4px 0 0">Configurez un montant minimum dans vos paramètres.</p>
+									<a href="parametre.html" style="font-size: 10px; color: #9b7629; font-weight: 700">Configurer</a>
+								</div>
+							</div>
+							<div style="display: flex; gap: 11px; padding: 15px 0">
+								<span class="material-symbols-outlined" style="color: #24764b">groups</span>
+								<div>
+									<strong style="font-size: 11px; color: #17271e">Rappels de tontine</strong>
+									<p style="font-size: 10px; color: #748078; margin: 4px 0 0">Activez vos rappels quotidiens depuis les paramètres.</p>
+									<a href="parametre.html" style="font-size: 10px; color: #9b7629; font-weight: 700">Gérer les rappels</a>
+								</div>
+							</div>
+						</section>
+
+						<section style="background: #f7f3e9; border: 1px solid #eee3c9; border-radius: 14px; padding: 13px; display: flex; gap: 10px; align-items: center">
+							<span class="material-symbols-outlined" style="color: #a7802c">shield</span>
+							<p style="font-size: 10px; line-height: 1.5; color: #405047; margin: 0">
+								Les notifications seront affichées ici lorsque les alertes seront reliées à vos données.
+							</p>
+						</section>
+					</main>
+
+					<nav class="naya-nav" aria-label="Navigation principale">
+						<a class="" href="dashboard.html">
+							<span class="material-symbols-outlined">dashboard</span>
+							<span>Accueil</span>
+						</a>
+						<a class="" href="ventes.html">
+							<span class="material-symbols-outlined">receipt_long</span>
+							<span>Ventes</span>
+						</a>
+						<a class="voice " href="interaction.html" aria-label="Discuter à NAYA">
+						<span class="nav-mic"><span class="material-symbols-outlined">chat</span></span>
+							<span>Discuter</span>
+						</a>
+						<a class="active" href="alertes.html">
+							<span class="material-symbols-outlined">notifications_active</span>
+							<span>Alertes</span>
+						</a>
+						<a class="" href="parametre.html">
+							<span class="material-symbols-outlined">settings</span>
+							<span>Réglages</span>
+						</a>
+					</nav>
+					<div class="naya-home"></div>
+				</div>
+			</div>
+		</div>
+		<script src="naya.js" defer></script>
+	</body>
+</html>

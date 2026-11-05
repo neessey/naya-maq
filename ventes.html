@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    >
+    <title>NAYA — Journal des ventes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fontsource/material-symbols-outlined@5.0.20/index.css"
+    >
+    <link rel="stylesheet" href="naya.css">
+  </head>
+  <body>
+    <div class="naya-stage">
+      <div class="naya-phone">
+        <div class="naya-screen">
+          <div class="naya-status">
+            <span>9:41</span>
+            <span>● Wi-Fi ▰</span>
+          </div>
+
+          <div class="naya-island"></div>
+
+          <header class="naya-topbar">
+            <div class="naya-brand">
+              <img src="logo1.png" alt="Logo NAYA">
+              <small>Journal des ventes</small>
+            </div>
+
+            <div class="naya-top-actions">
+              <img
+                class="naya-avatar"
+                src="./img.jpg"
+                alt="Photo de profil"
+                style="width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid #e9d59a;display:block;box-shadow:0 4px 12px rgba(4,23,15,.12);"
+              >
+            </div>
+          </header>
+
+          <main class="naya-content">
+            <div style="margin-bottom: 18px;">
+              <p
+                style="font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#24764b;margin:0 0 6px;"
+              >
+                Mon activité
+              </p>
+              <h1 style="font:700 27px 'EB Garamond',serif;color:#04170f;margin:0;">
+                Journal des ventes
+              </h1>
+              <p style="font-size:12px;color:#64736a;margin:5px 0;">
+                Retrouvez les opérations enregistrées dans votre caisse.
+              </p>
+            </div>
+
+            <section
+              style="background:linear-gradient(135deg,#04170f,#123b28);border-radius:18px;padding:18px;color:white;margin-bottom:14px;"
+            >
+              <div style="font-size:11px;color:#d9e4dc;">
+                Total des ventes enregistrées
+              </div>
+              <div style="font:700 30px 'EB Garamond',serif;margin:5px 0;">
+                0 FCFA
+              </div>
+              <div style="font-size:10px;color:#d4af37;">
+                Aucune opération pour le moment
+              </div>
+            </section>
+
+            <section
+              style="background:white;border:1px solid #ece9df;border-radius:17px;padding:16px;margin-bottom:14px;"
+            >
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <strong style="font-size:13px;color:#04170f;">Transactions récentes</strong>
+                <span style="font-size:10px;color:#9b7629;">Aujourd'hui</span>
+              </div>
+
+              <div style="text-align:center;padding:34px 12px 24px;">
+                <div
+                  style="width:48px;height:48px;border-radius:16px;background:#f7efd9;color:#a67d25;display:grid;place-items:center;margin:auto auto 12px;"
+                >
+                  <span class="material-symbols-outlined">receipt_long</span>
+                </div>
+                <strong style="font-size:12px;color:#04170f;">
+                  Votre journal est encore vide
+                </strong>
+                <p
+                  style="font-size:11px;line-height:1.6;color:#748078;max-width:230px;margin:7px auto 14px;"
+                >
+                  Dicztez une vente à NAYA pour commencer à suivre vos recettes.
+                </p>
+                <a
+                  href="interaction.html"
+                  style="display:inline-block;background:#04170f;color:#f3c969;padding:11px 16px;border-radius:11px;text-decoration:none;font-size:11px;font-weight:700;"
+                >
+                  Enregistrer une vente
+                </a>
+              </div>
+            </section>
+
+            <section
+              style="background:#f7f3e9;border:1px solid #eee3c9;border-radius:14px;padding:13px;display:flex;gap:10px;align-items:center;"
+            >
+              <span class="material-symbols-outlined" style="color:#a7802c;">tips_and_updates</span>
+              <p style="font-size:10px;line-height:1.5;color:#405047;margin:0;">
+                Astuce : indiquez le produit, la quantité et le prix pour que votre journal soit facile à consulter.
+              </p>
+            </section>
+          </main>
+
+          <nav class="naya-nav" aria-label="Navigation principale">
+            <a class="" href="dashboard.html">
+              <span class="material-symbols-outlined">dashboard</span>
+              <span>Accueil</span>
+            </a>
+            <a class="active" href="ventes.html">
+              <span class="material-symbols-outlined">receipt_long</span>
+              <span>Ventes</span>
+            </a>
+            <a class="voice " href="interaction.html" aria-label="Discuter à NAYA">
+             						<span class="nav-mic"><span class="material-symbols-outlined">chat</span></span>
+
+              <span>Discuter</span>
+            </a>
+            <a class="" href="alertes.html">
+              <span class="material-symbols-outlined">notifications_active</span>
+              <span>Alertes</span>
+            </a>
+            <a class="" href="parametre.html">
+              <span class="material-symbols-outlined">settings</span>
+              <span>Réglages</span>
+            </a>
+          </nav>
+
+          <div class="naya-home"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="naya.js" defer></script>
+  </body>
+</html>

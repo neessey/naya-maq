@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="light" lang="fr" style="min-height: 100vh; opacity: 1 !important; visibility: visible !important;"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+<title>NAYA — Assistante vocale</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-cream": "#FDFBF7",
+            "gold-rich": "#B89020",
+            "gold-radiant": "#D4AF37",
+            "gold-light": "#F3C969",
+            "header-deep-forest": "#04170F",
+            "header-forest-elevated": "#0A2418",
+            "text-forest-charcoal": "#0D1E16",
+            "text-forest-muted": "#3A4D43",
+            "positive-emerald": "#1E824C",
+            "error": "#BA1A1A",
+            "surface-ivory": "#FBF9F5",
+            "surface-container-low": "#F5F3EF",
+            "border-subtle": "rgba(4, 23, 15, 0.08)",
+            "border-gold": "rgba(212, 175, 55, 0.35)",
+          },
+          fontFamily: {
+            serif: ["'EB Garamond'", "serif"],
+            sans: ["'Plus Jakarta Sans'", "sans-serif"],
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    html, body {
+      opacity: 1 !important;
+      visibility: visible !important;
+      margin: 0;
+      padding: 0;
+      background-color: #fbf9f5;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      min-height: 100vh;
+      overflow-y: auto;
+      -webkit-font-smoothing: antialiased;
+    }
+    .pb-safe {
+      padding-bottom: env(safe-area-inset-bottom, 16px);
+    }
+    .pt-safe {
+      padding-top: env(safe-area-inset-top, 0px);
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+<link href="naya.css" rel="stylesheet"/><script defer="True" src="naya.js"></script></head>
+<body class="bg-surface-ivory text-text-forest-charcoal min-h-screen flex flex-col justify-between selection:bg-gold-light/40 selection:text-header-deep-forest"><div class="naya-stage"><div aria-label="Aperçu de NAYA sur iPhone 13" class="naya-phone"><div class="naya-screen"><div class="naya-status"><span>9:41</span><span>●  Wi-Fi  ▰</span></div><div class="naya-island"></div><header class="naya-topbar">
+<div class="naya-brand"><img alt="Logo NAYA" src="logo1.png"/><small>Assistante vocale</small></div>
+<div class="naya-top-actions"><button aria-label="Notifications" onclick="location.href='alertes.html'" type="button"><span class="material-symbols-outlined">notifications</span></button><span class="naya-avatar">   <img
+                class="naya-avatar"
+                src="./img.jpg"
+                alt="Photo de profil"
+                style="width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid #e9d59a;display:block;box-shadow:0 4px 12px rgba(4,23,15,.12);"
+              ></span></div>
+</header><main class="pt-20 naya-content px-4 flex-col flex-1 mx-auto gap-5 max-w-lg pb-32 flex w-full"><div class="flex-1 flex flex-col justify-center items-center text-center px-2 py-6 my-auto"><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#04170f] text-[#f3c969] text-xs font-semibold tracking-wide mb-3 shadow-sm border border-[#d4af37]/30"><span class="w-2 h-2 rounded-full bg-[#4bca78] animate-pulse"></span><span class="">NAYA IA · Assistante Financière Vocale</span></div><h1 class="font-serif text-2xl font-bold text-text-forest-charcoal leading-snug mb-2">Bonjour ! Comment puis-je vous aider aujourd'hui ?</h1><p class="text-[14px] leading-relaxed text-text-forest-muted max-w-xs mb-6">Dictez ou écrivez vos ventes du jour, notez une dépense, ou posez vos questions pour gérer votre caisse sereinement.</p><div class="w-full max-w-sm flex flex-col gap-2.5"><span class="text-[11px] font-bold text-text-forest-muted uppercase tracking-wider text-left px-1">Exemples de demandes</span><button class="w-full bg-white border border-[#d4af37]/35 rounded-xl p-3 text-left shadow-sm hover:bg-[#fdfaf2] transition-colors flex items-center justify-between group" type="button"><div class="flex items-center gap-2.5"><div class="w-7 h-7 rounded-lg bg-[#f5f3ef] text-gold-rich flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[17px]">mic</span></div><span class="text-xs text-text-forest-charcoal font-medium">« J'ai vendu 2 pagnes à 8 000 FCFA »</span></div><span class="material-symbols-outlined text-gray-400 group-hover:text-gold-rich text-[18px] transition-colors">arrow_forward</span></button><button class="w-full bg-white border border-[#04170f]/10 rounded-xl p-3 text-left shadow-sm hover:bg-[#f5f3ef] transition-colors flex items-center justify-between group" type="button"><div class="flex items-center gap-2.5"><div class="w-7 h-7 rounded-lg bg-[#f5f3ef] text-positive-emerald flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[17px]">account_balance_wallet</span></div><span class="text-xs text-text-forest-charcoal font-medium">« Quel est le solde de ma caisse ? »</span></div><span class="material-symbols-outlined text-gray-400 group-hover:text-positive-emerald text-[18px] transition-colors">arrow_forward</span></button></div></div><div class="sticky bottom-20 z-40 w-full mt-auto pt-2"><div class="bg-white/95 backdrop-blur-md border border-[#d4af37]/30 rounded-2xl p-2 shadow-[0_4px_24px_rgba(4,23,15,0.12)] flex items-center gap-2"><button aria-label="Joindre un fichier ou reçu" class="w-10 h-10 rounded-xl bg-[#f5f3ef] hover:bg-[#efeeea] text-[#04170f] flex items-center justify-center shrink-0 transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">add</span></button><div class="flex-1 relative flex items-center"><input class="w-full bg-[#fbf9f5] border border-border-subtle rounded-xl py-2.5 pl-3.5 pr-9 text-xs text-text-forest-charcoal placeholder:text-gray-400 focus:outline-none focus:border-gold-rich focus:ring-1 focus:ring-gold-rich" placeholder="Écrivez ou dictez votre opération..." type="text"/><button aria-label="Discuter" class="absolute right-2 text-gold-rich hover:text-[#04170f] transition-colors flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[19px]">mic</span></button></div><button aria-label="Envoyer le message" class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#d4af37] via-[#f3c969] to-[#ffe088] text-[#04170f] flex items-center justify-center shrink-0 shadow-sm active:scale-95 transition-transform hover:brightness-105" type="button"><span class="material-symbols-outlined text-[20px] font-bold">send</span></button></div></div></main><nav aria-label="Navigation principale" class="naya-nav"><a class="" href="dashboard.html"><span class="material-symbols-outlined">dashboard</span><span>Accueil</span></a><a class="" href="ventes.html"><span class="material-symbols-outlined">receipt_long</span><span>Ventes</span></a><a aria-label="Discuter à NAYA" class="voice active" href="interaction.html">						<span class="nav-mic"><span class="material-symbols-outlined">chat</span></span>
+<span>Discuter</span></a><a class="" href="alertes.html"><span class="material-symbols-outlined">notifications_active</span><span>Alertes</span></a><a class="" href="parametre.html"><span class="material-symbols-outlined">settings</span><span>Réglages</span></a></nav><div class="naya-home"></div></div></div></div></body></html>

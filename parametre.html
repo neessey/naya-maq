@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="h-full bg-[#fbf9f5]" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+<title>NAYA — Paramètres</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "forest-dark": "#04170f",
+            "forest-card": "#09281e",
+            "gold-radiant": "#d4af37",
+            "gold-rich": "#c59b27",
+            "gold-light": "#f3c969",
+            "surface-cream": "#fbf9f5",
+            "surface-ivory": "#f5f3ef",
+            "emerald-soft": "#1e824c",
+            "emerald-bg": "#eaf7ef",
+            "text-dark": "#111f19",
+            "text-muted": "#56675d",
+            "border-subtle": "rgba(4, 23, 15, 0.08)",
+            "border-gold": "rgba(212, 175, 55, 0.3)"
+          },
+          fontFamily: {
+            serif: ["'EB Garamond'", "serif"],
+            sans: ["'Plus Jakarta Sans'", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .pb-safe {
+      padding-bottom: env(safe-area-inset-bottom, 16px);
+    }
+    .pt-safe {
+      padding-top: env(safe-area-inset-top, 0px);
+    }
+  </style>
+<link href="naya.css" rel="stylesheet"/><script defer="True" src="naya.js"></script></head>
+<body class="bg-[#fbf9f5] font-sans text-text-dark min-h-screen flex flex-col antialiased"><div class="naya-stage"><div aria-label="Aperçu de NAYA sur iPhone 13" class="naya-phone"><div class="naya-screen"><div class="naya-status"><span>9:41</span><span>●  Wi-Fi  ▰</span></div><div class="naya-island"></div><header class="naya-topbar">
+<div class="naya-brand"><img alt="Logo NAYA" src="logo1.png"/><small>Paramètres</small></div>
+<div class="naya-top-actions"><button aria-label="Notifications" onclick="location.href='alertes.html'" type="button"><span class="material-symbols-outlined">notifications</span></button><span class="naya-avatar">   <img
+                class="naya-avatar"
+                src="./img.jpg"
+                alt="Photo de profil"
+                style="width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid #e9d59a;display:block;box-shadow:0 4px 12px rgba(4,23,15,.12);"
+              ></span></div>
+</header><main class="naya-content px-4 space-y-5 flex-1 mx-auto pt-24 max-w-lg pb-32 w-full">
+<!-- Fiche Marchande Profil -->
+<section class="bg-white rounded-2xl p-4 shadow-sm border border-border-subtle relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-28 h-28 bg-gold-radiant/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-start gap-3.5"><div class="relative shrink-0"><div class="w-16 h-16 rounded-full bg-gradient-to-tr from-[#04170f] to-[#09281e] ring-2 ring-gold-radiant/40 shadow flex items-center justify-center text-gold-radiant"><span class="material-symbols-outlined text-3xl">person</span></div><div class="absolute -bottom-1 -right-1 w-5 h-5 bg-[#04170f] text-gold-radiant rounded-full flex items-center justify-center shadow"><span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">add</span></div></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between gap-1 mb-0.5"><h2 class="font-serif text-lg font-bold text-text-dark tracking-normal truncate">Mon Compte </h2><span class="inline-flex items-center gap-1 text-[10px] font-semibold tracking-wide bg-gold-radiant/15 text-gold-rich px-2 py-0.5 rounded-full shrink-0"><span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;"></div><p class="text-xs text-text-muted flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-gold-rich">store</span>Marché / Boutique à renseigner</p><p class="text-xs text-gold-rich flex items-center gap-1 mt-0.5 font-medium hover:underline cursor-pointer"></p></div></div>
+<div class="mt-4 pt-3 border-t border-border-subtle flex items-center justify-between bg-[#fcfbfa] -mx-4 -mb-4 px-4 py-3 rounded-b-2xl"><div><span class="text-[11px] uppercase tracking-wider text-text-muted font-medium block">Solde caisse initialisé</span><div class="flex items-baseline gap-1.5"><span class="font-serif text-xl font-bold text-text-dark tracking-tight">0 FCFA</span><span class="text-[10px] text-text-muted font-medium">(Caisse vierge)</span></div></div><button class="px-3 py-1.5 rounded-lg bg-[#04170f] text-gold-radiant text-xs font-semibold flex items-center gap-1 hover:bg-[#09281e] active:scale-95 transition-all shadow-sm" type="button"><span class="material-symbols-outlined text-sm">qr_code_2</span>Créer mon Badge</button></div>
+</section>
+<!-- Section 1 : Langue vocale & IA NAYA -->
+<section class="bg-white rounded-2xl p-4 shadow-sm border border-border-subtle space-y-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-gold-radiant/15 text-gold-rich flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">record_voice_over</span>
+</div>
+<div>
+<h3 class="font-serif text-base font-bold text-text-dark">Langue vocale</h3>
+<p class="text-xs text-text-muted">Reconnaissance de vos dictées et consignes vocales</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<!-- Option Français Ivoirien (Actif) -->
+<button class="relative p-2.5 rounded-xl border-2 border-gold-radiant bg-gold-radiant/5 flex items-center justify-between text-left transition-all" type="button">
+<div class="flex flex-col">
+<span class="text-xs font-bold text-[#04170f]">Français Ivoirien</span>
+<span class="text-[10px] text-text-muted">Voix active par défaut</span>
+</div>
+<span class="material-symbols-outlined text-gold-rich text-base" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</button>
+<!-- Option Baoulé -->
+<button class="p-2.5 rounded-xl border border-border-subtle bg-[#faf8f4] hover:bg-gold-radiant/5 flex items-center justify-between text-left transition-all" type="button">
+<div class="flex flex-col">
+<span class="text-xs font-semibold text-text-dark">Baoulé</span>
+<span class="text-[10px] text-text-muted">Kouassikro &amp; Centre</span>
+</div>
+<span class="w-4 h-4 rounded-full border border-gray-300"></span>
+</button>
+<!-- Option Dioula -->
+<button class="p-2.5 rounded-xl border border-border-subtle bg-[#faf8f4] hover:bg-gold-radiant/5 flex items-center justify-between text-left transition-all" type="button">
+<div class="flex flex-col">
+<span class="text-xs font-semibold text-text-dark">Dioula</span>
+<span class="text-[10px] text-text-muted">Commerce &amp; Marchés</span>
+</div>
+<span class="w-4 h-4 rounded-full border border-gray-300"></span>
+</button>
+<!-- Option Wolof -->
+<button class="p-2.5 rounded-xl border border-border-subtle bg-[#faf8f4] hover:bg-gold-radiant/5 flex items-center justify-between text-left transition-all" type="button">
+<div class="flex flex-col">
+<span class="text-xs font-semibold text-text-dark">Wolof</span>
+<span class="text-[10px] text-text-muted">Grand Ouest &amp; Sénégal</span>
+</div>
+<span class="w-4 h-4 rounded-full border border-gray-300"></span>
+</button>
+</div>
+<!-- Option d'écoute rapide mains libres -->
+<div class="pt-2 flex items-center justify-between border-t border-border-subtle">
+<div class="pr-2">
+<p class="text-xs font-semibold text-text-dark">Détection vocale « NAYA, note »</p>
+<p class="text-[11px] text-text-muted">Déclenche automatiquement la prise de vente sans toucher l'écran</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#04170f]"></div>
+</label>
+</div>
+</section>
+<!-- Section 2 : Gestion financière & Alertes -->
+<section class="bg-white rounded-2xl p-4 shadow-sm border border-border-subtle space-y-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-emerald-bg text-emerald-soft flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">account_balance_wallet</span>
+</div>
+<div>
+<h3 class="font-serif text-base font-bold text-text-dark">Gestion financière &amp; Alertes</h3>
+<p class="text-xs text-text-muted">Automatisation de votre trésorerie et vos cotisations</p>
+</div>
+</div>
+<div class="space-y-3 pt-1">
+<!-- Item 1: Seuil d'alerte trésorerie -->
+<div class="flex items-center justify-between py-1"><div class="pr-3"><p class="text-xs font-semibold text-text-dark">Seuil d'alerte trésorerie basse</p><p class="text-[11px] text-text-muted">Alerter si la caisse passe sous un seuil minimal</p></div><button class="px-2.5 py-1 text-xs font-semibold rounded-md bg-[#f5f3ef] text-[#04170f] hover:bg-gold-radiant/20 flex items-center gap-1 border border-border-subtle shrink-0" type="button"><span class="text-text-muted">Non défini</span><span class="material-symbols-outlined text-[14px]">add</span></button></div>
+<!-- Item 2: Rappels tontine quotidiens -->
+<div class="flex items-center justify-between py-1 border-t border-border-subtle">
+<div class="pr-3">
+<p class="text-xs font-semibold text-text-dark">Rappels tontine quotidiens</p>
+<p class="text-[11px] text-text-muted">Alerte SMS &amp; vocale chaque jour à 17h00 avant versement</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#04170f]"></div>
+</label>
+</div>
+<!-- Item 3: Arrondi d'épargne automatique -->
+<div class="flex items-center justify-between py-1 border-t border-border-subtle">
+<div class="pr-3">
+<p class="text-xs font-semibold text-text-dark">Arrondi d'épargne automatique</p>
+<p class="text-[11px] text-text-muted">Mettre de côté les pièces de 100 &amp; 500 FCFA sur compte coffre</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#04170f]"></div>
+</label>
+</div>
+</div>
+</section>
+<!-- Section 3 : Sécurité & Authentification -->
+<section class="bg-white rounded-2xl p-4 shadow-sm border border-border-subtle space-y-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-forest-dark text-gold-radiant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">shield_lock</span>
+</div>
+<div>
+<h3 class="font-serif text-base font-bold text-text-dark">Sécurité &amp; Authentification</h3>
+<p class="text-xs text-text-muted">Protection biométrique et code confidentiel</p>
+</div>
+</div>
+<div class="space-y-3 pt-1">
+<!-- Empreinte vocale enregistrée -->
+<div class="flex items-center justify-between py-1"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-text-muted text-xl">mic_off</span><div><p class="text-xs font-semibold text-text-dark">Empreinte vocale marchande</p><p class="text-[11px] text-text-muted font-medium">Non configurée</p></div></div><button class="px-2.5 py-1 text-xs font-semibold rounded-md bg-[#04170f] text-gold-radiant hover:bg-[#09281e] shrink-0 active:scale-95 transition-all shadow-sm" type="button">Enregistrer ma voix</button></div>
+<!-- Modifier code secret PIN 4 chiffres -->
+<div class="flex items-center justify-between py-1 border-t border-border-subtle">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-text-muted text-xl">pin</span>
+<div>
+<p class="text-xs font-semibold text-text-dark">Code secret PIN (4 chiffres)</p>
+<p class="text-[11px] text-text-muted">Requis pour débloquer les gros retraits</p>
+</div>
+</div>
+<button class="px-2.5 py-1 text-xs font-semibold rounded-md bg-[#f5f3ef] text-[#04170f] hover:bg-gold-radiant/20 border border-border-subtle shrink-0" type="button">
+            Modifier
+          </button>
+</div>
+<!-- Connexion biométrique -->
+<div class="flex items-center justify-between py-1 border-t border-border-subtle">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-text-muted text-xl">fingerprint</span>
+<div>
+<p class="text-xs font-semibold text-text-dark">Connexion biométrique (Face ID / Doigt)</p>
+<p class="text-[11px] text-text-muted">Ouverture instantanée et ultra-sécurisée</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#04170f]"></div>
+</label>
+</div>
+</div>
+</section>
+<!-- Section 4 : Assistance & Sauvegarde -->
+<section class="bg-white rounded-2xl p-4 shadow-sm border border-border-subtle space-y-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-gold-radiant/15 text-gold-rich flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">cloud_done</span>
+</div>
+<div>
+<h3 class="font-serif text-base font-bold text-text-dark">Assistance &amp; Sauvegarde</h3>
+<p class="text-xs text-text-muted">Vos comptes toujours disponibles, même sans réseau</p>
+</div>
+</div>
+<div class="space-y-2.5 pt-1">
+<!-- Sauvegarde hors ligne -->
+<div class="p-3 rounded-xl bg-[#faf8f4] border border-border-subtle flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-emerald-soft text-xl">sync_saved_locally</span>
+<div>
+<p class="text-xs font-semibold text-text-dark">Cahier synchronisé hors-ligne</p>
+<p class="text-[11px] text-text-muted">Dernière sauvegarde : il y a 8 min</p>
+</div>
+</div>
+<span class="text-[10px] font-bold text-emerald-soft bg-emerald-bg px-2 py-0.5 rounded-full">Actif</span>
+</div>
+<!-- Bouton WhatsApp Conseiller -->
+<a class="w-full p-3 rounded-xl bg-[#04170f] text-gold-radiant flex items-center justify-between active:scale-[0.98] transition-all shadow" href="https://wa.me/2250700000000" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-2xl text-gold-radiant">support_agent</span>
+<div class="text-left">
+<span class="text-xs font-bold text-white block">Contacter un conseiller WhatsApp</span>
+<span class="text-[11px] text-gold-light/90">Fatou N. • Assistance marchande dédiée</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-gold-radiant text-xl">open_in_new</span>
+</a>
+</div>
+<!-- Bouton Déconnexion discret en rouge -->
+<div class="pt-2 text-center">
+<button class="inline-flex items-center justify-center gap-1.5 px-4 py-2 text-xs font-semibold text-red-700 bg-red-50 hover:bg-red-100 rounded-lg active:scale-95 transition-all w-full" type="button">
+<span class="material-symbols-outlined text-base">logout</span>
+<span class="">Déconnexion de la session marchande</span>
+</button>
+<p class="text-[10px] text-text-muted mt-2">NAYA Finance v2.4 • Abidjan, Côte d'Ivoire</p>
+</div>
+</section>
+</main><nav aria-label="Navigation principale" class="naya-nav"><a class="" href="dashboard.html"><span class="material-symbols-outlined">dashboard</span><span>Accueil</span></a><a class="" href="ventes.html"><span class="material-symbols-outlined">receipt_long</span><span>Ventes</span></a><a aria-label="Discuter à NAYA" class="voice" href="interaction.html">						<span class="nav-mic"><span class="material-symbols-outlined">chat</span></span>
+<span>Discuter</span></a><a class="" href="alertes.html"><span class="material-symbols-outlined">notifications_active</span><span>Alertes</span></a><a class="active" href="parametre.html"><span class="material-symbols-outlined">settings</span><span>Réglages</span></a></nav><div class="naya-home"></div></div></div></div></body></html>

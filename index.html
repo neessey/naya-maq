@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="h-full bg-stone-900" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+<title>NAYA — Connexion</title>
+<!-- Google Fonts: Playfair Display / Cormorant & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=Prata&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Forms Plugin -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Custom Configuration -->
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            naya: {
+              forest: '#051911',
+              forestLight: '#0d281e',
+              emerald: '#103828',
+              gold: '#c99f3b',
+              goldLight: '#e6c775',
+              goldDark: '#a37b22',
+              ivory: '#fcfaf6',
+              ivoryDark: '#f3efe8',
+              muted: '#717f77',
+              charcoal: '#18241e'
+            }
+          },
+          fontFamily: {
+            serif: ['Prata', 'Cinzel', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<!-- Typography & Layout Base Styles -->
+<style data-purpose="custom-typography">
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+    }
+    .font-brand {
+      font-family: 'Prata', serif;
+      letter-spacing: 0.08em;
+    }
+    .font-logo {
+      font-family: 'Cinzel', serif;
+      letter-spacing: 0.18em;
+    }
+  </style>
+<!-- Topographic Wave & Visual Details -->
+<style data-purpose="topographic-waves">
+    /* Deep Forest Topographic Contour Lines SVG Pattern */
+    .topography-bg {
+      background-color: #051911;
+      background-image: 
+        radial-gradient(ellipse at 50% 20%, rgba(20, 60, 43, 0.55) 0%, transparent 70%),
+        radial-gradient(circle at 85% 30%, rgba(201, 159, 59, 0.08) 0%, transparent 45%);
+    }
+
+    .topo-lines {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg fill='none' stroke='%2322523b' stroke-width='0.75' stroke-opacity='0.28'%3E%3Cpath d='M-100,50 Q100,140 200,60 T500,70'/%3E%3Cpath d='M-100,80 Q120,170 200,90 T500,100'/%3E%3Cpath d='M-100,110 Q140,200 200,120 T500,130'/%3E%3Cpath d='M-100,140 Q160,230 200,150 T500,160' stroke='%23c99f3b' stroke-opacity='0.22'/%3E%3Cpath d='M-100,170 Q180,260 200,180 T500,190'/%3E%3Cpath d='M-100,200 Q200,290 200,210 T500,220'/%3E%3Cpath d='M-100,230 Q220,320 200,240 T500,250' stroke='%23c99f3b' stroke-opacity='0.16'/%3E%3Cpath d='M-100,260 Q240,350 200,270 T500,280'/%3E%3Cellipse cx='210' cy='160' rx='95' ry='50' stroke='%23c99f3b' stroke-opacity='0.2'/%3E%3Cellipse cx='210' cy='160' rx='65' ry='32' stroke='%232e6a4e' stroke-opacity='0.25'/%3E%3Cellipse cx='210' cy='160' rx='35' ry='16' stroke='%23c99f3b' stroke-opacity='0.25'/%3E%3C/g%3E%3C/svg%3E");
+      background-size: 380px 380px;
+    }
+
+    /* Soft curved organic transition simulating image curve */
+    .wave-divider {
+      filter: drop-shadow(0 -5px 12px rgba(4, 23, 15, 0.12));
+    }
+  </style>
+<link href="naya.css" rel="stylesheet"/><script defer="True" src="naya.js"></script></head>
+<body class="antialiased selection:bg-amber-200 selection:text-amber-900">
+<div class="naya-stage">
+<div class="naya-phone">
+<div class="naya-screen">
+<div class="naya-status">
+<span>9:41</span>
+<span>● Wi-Fi ▰</span>
+</div>
+<div class="naya-island"></div>
+<!-- BEGIN: Login screen inside the shared phone frame -->
+<main class="relative w-full flex-1 min-h-0 bg-naya-forest flex flex-col justify-between overflow-hidden text-naya-charcoal naya-login-inner">
+
+
+<!-- Logo personnalisé -->
+<div class="relative z-10 flex items-center justify-center my-auto px-6">
+<img alt="Logo NAYA" class="w-40 h-auto max-h-36 object-contain" src="./logo1.png"/>
+</div>
+<!-- Organic Wave Cutout at bottom of deep green section (Mirroring Image 3 wave profile) -->
+<div class="relative w-full leading-none z-10 wave-divider -mb-px" data-purpose="organic-wave-divider">
+<svg class="w-full block text-naya-ivory h-14 sm:h-16" fill="currentColor" preserveaspectratio="none" viewbox="0 0 375 75">
+<!-- Fluid organic asymmetrical wave from left high to smooth drop on right, identical to template -->
+<path d="M0,32 C45,10 110,4 165,30 C220,56 280,68 375,44 L375,76 L0,76 Z"></path>
+</svg>
+</div>
+
+<!-- END: TopSection -->
+<!-- BEGIN: BottomFormSection (Warm Ivory Content Area) -->
+<div class="relative w-full h-[57%] bg-naya-ivory flex flex-col justify-between px-7 pt-1 pb-5 overflow-y-auto" data-purpose="login-form-container">
+<!-- Top Text Block -->
+<div class="mb-3">
+<div class="inline-block">
+<h2 class="text-2xl font-bold tracking-tight text-naya-charcoal font-serif">Connexion</h2>
+<!-- Golden Accent Underline Under Title -->
+<div class="h-0.5 w-9 bg-naya-gold rounded-full mt-1"></div>
+</div>
+<p class="text-xs text-stone-600 mt-1.5 font-normal">
+          Accédez à votre cahier de vente et trésorerie.
+        </p>
+</div>
+<!-- FORM FIELDS -->
+<form class="space-y-4" data-purpose="sign-in-form" onsubmit="event.preventDefault(); window.location.href='dashboard.html';">
+<!-- Field 1: Phone Number (African Fintech Standard) -->
+<div class="space-y-1">
+<label class="block text-xs font-semibold text-naya-charcoal/80 uppercase tracking-wider">
+            Numéro de téléphone
+          </label>
+<div class="relative flex items-center border-b-2 border-stone-300 focus-within:border-naya-gold transition-colors pb-1.5 pt-0.5">
+<!-- Ivory Coast Flag & Phone Icon Indicator -->
+<div class="flex items-center space-x-1.5 pr-2.5 text-stone-500 border-r border-stone-200">
+<span class="text-sm" title="Côte d'Ivoire">🇨🇮</span>
+<svg class="w-3.5 h-3.5 text-stone-500" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<input class="w-full bg-transparent border-none text-naya-charcoal font-semibold text-sm px-3 py-0 focus:ring-0 placeholder-stone-400 focus:outline-none" id="phone-input" name="phone" placeholder="0X XX XX XX XX (Orange, MTN, Moov...)" required="" type="tel"/>
+</div>
+</div>
+<!-- Field 2: Secret PIN Code -->
+<div class="space-y-1">
+<label class="block text-xs font-semibold text-naya-charcoal/80 uppercase tracking-wider">
+            Code secret PIN
+          </label>
+<div class="relative flex items-center border-b-2 border-stone-300 focus-within:border-naya-gold transition-colors pb-1.5 pt-0.5">
+<!-- Lock Icon -->
+<div class="text-stone-500 pr-2 pl-0.5">
+<svg class="w-4 h-4 text-stone-500" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<input class="w-full bg-transparent border-none text-naya-charcoal font-bold text-sm px-2 py-0 focus:ring-0 placeholder-stone-400 focus:outline-none" id="pin-input" maxlength="6" name="pin" placeholder="Entrez votre code à 4 chiffres" required="" type="password"/>
+<!-- Eye Icon (Toggle visibility) -->
+<button class="text-stone-400 hover:text-stone-600 focus:outline-none p-1 transition-colors" title="Afficher le code" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</div>
+<!-- Utility Row: Remember Me & Forgot Password -->
+<div class="flex items-center justify-between text-xs pt-0.5">
+<label class="flex items-center space-x-2 cursor-pointer select-none">
+<input class="w-4 h-4 rounded text-naya-forest border-stone-300 focus:ring-naya-gold/50 cursor-pointer accent-naya-forest" type="checkbox"/>
+<span class="text-stone-600 font-medium">Se souvenir de moi</span>
+</label>
+<a class="text-naya-goldDark hover:text-naya-forest font-semibold transition-colors" href="#forgot">
+            Code oublié ?
+          </a>
+</div>
+<!-- Primary Action Button: Se connecter -->
+<div class="pt-2">
+<button class="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-naya-forest via-naya-forestLight to-naya-forest text-amber-100 font-bold text-sm tracking-wide shadow-md shadow-emerald-950/20 hover:brightness-110 active:scale-[0.99] transition-all flex items-center justify-center space-x-2 border border-amber-500/30" type="submit">
+<span class="">Se connecter</span>
+<svg class="w-4 h-4 text-naya-gold" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</button>
+</div>
+</form>
+<!-- Vocal Biometrics Alternative (Core NAYA innovation) -->
+<div class="mt-2.5 text-center" data-purpose="voice-biometrics-entry">
+<button class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-full bg-amber-50 border border-amber-200/70 text-xs font-medium text-naya-forest hover:bg-amber-100/60 transition-colors" type="button">
+<!-- Voice Wave / Mic Icon -->
+<svg class="w-3.5 h-3.5 text-naya-goldDark" fill="currentColor" viewbox="0 0 20 20">
+<path clip-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" fill-rule="evenodd"></path>
+</svg>
+<span class="">Ou s'identifier à la voix</span>
+</button>
+</div>
+<!-- Registration Link & Security Compliance Tag -->
+<div class="text-center pt-2 pb-1 space-y-1.5" data-purpose="footer-links">
+<p class="text-xs text-stone-600">
+          Pas encore de compte ? 
+          <a class="text-naya-forest font-bold hover:underline decoration-naya-gold underline-offset-4 ml-0.5" href="#signup">
+            S'inscrire
+          </a>
+</p>
+<!-- Regulatory & Security Mention -->
+<div class="flex items-center justify-center space-x-1 text-[10px] text-stone-400 font-medium">
+<svg class="w-2.5 h-2.5 text-emerald-800" fill="currentColor" viewbox="0 0 20 20">
+<path clip-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" fill-rule="evenodd"></path>
+</svg>
+<span class="">Données chiffrées • Conforme UEMOA / BCEAO</span>
+</div>
+</div>
+<!-- iOS Home Indicator -->
+</div>
+<!-- END: BottomFormSection -->
+</main>
+<div class="naya-home"></div>
+</div>
+</div>
+</div>
+</body></html>
